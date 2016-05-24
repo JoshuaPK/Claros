@@ -150,7 +150,12 @@ Claros inTouch featured an instant messenger (supporting Jabber, MSN, Gtalk, and
 		    <artifactId>servlet-api</artifactId>
 		    <version>2.5</version>
 		</dependency>
-        </dependencies>
+			<dependency>
+				<groupId>jivesoftware</groupId>
+				<artifactId>smack</artifactId>
+				<version>3.0.4</version>  <!-- 3.1.0 -->
+			</dependency>
+		</dependencies>
     </dependencyManagement>
 	    
 </project>
