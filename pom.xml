@@ -29,7 +29,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Claros Project</name>
+    <name>Claros :: Project</name>
     <description>
 A web based communication suite featuring a spam protected webmail, a XMPP client, webdisk, RSS reader, contact list, post-it notes
 
@@ -43,13 +43,24 @@ Claros inTouch featured an instant messenger (supporting Jabber, MSN, Gtalk, and
         <maven>3.0.2</maven>
     </prerequisites>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <target.jdk>1.8</target.jdk>
     </properties>
 
-    <modules>
+	<repositories>
+		<repository>
+			<id>our-repo</id>
+			<name>Our Maven Repo</name>
+			<layout>default</layout>
+			<url>https://github.com/guofengzh/mvn-repo/raw/master/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<modules>
         <!--module>claros-commons</module-->
         <module>claros-base</module>
         <module>claros-mail</module>
@@ -154,6 +165,16 @@ Claros inTouch featured an instant messenger (supporting Jabber, MSN, Gtalk, and
 				<groupId>jivesoftware</groupId>
 				<artifactId>smack</artifactId>
 				<version>3.0.4</version>  <!-- 3.1.0 -->
+			</dependency>
+            <dependency>
+                <groupId>jivesoftware</groupId>
+                <artifactId>smackx</artifactId>
+                <version>3.0.4</version>  <!-- 3.1.0 -->
+            </dependency>
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>1.2.1</version>
 			</dependency>
 		</dependencies>
     </dependencyManagement>

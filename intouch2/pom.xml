@@ -37,24 +37,41 @@
        <sourceDirectory>src</sourceDirectory>
      
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.6</version>
-        <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-          <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
-        </configuration>
-      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.6</version>
+            <configuration>
+                <warSourceDirectory>WebContent</warSourceDirectory>
+                <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
+            </configuration>
+        </plugin>
     </plugins>
     </build>
     
     <dependencies>
-	<dependency>
-	    <groupId>org.claros</groupId>
-	    <artifactId>claros-base</artifactId>
-	    <version>${project.version}</version>
-	</dependency>
+        <dependency>
+            <groupId>org.claros</groupId>
+            <artifactId>claros-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jenkov</groupId>
+            <artifactId>mrpersister</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>jivesoftware</groupId>
+            <artifactId>smack</artifactId>
+        </dependency>
+        <!--dependency>
+            <groupId>jivesoftware</groupId>
+            <artifactId>smackx</artifactId>
+        </dependency-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
