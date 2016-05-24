@@ -50,7 +50,7 @@ Claros inTouch featured an instant messenger (supporting Jabber, MSN, Gtalk, and
     </properties>
 
     <modules>
-        <module>claros-commons</module>
+        <!--module>claros-commons</module-->
         <module>claros-base</module>
         <module>claros-mail</module>
         <module>intouch2</module>
