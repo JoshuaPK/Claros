@@ -9,9 +9,7 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGEncodeParam;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
+import javax.imageio.ImageIO;
 
 public class Thumbnail {
 	public byte[] getThumb(String fileName, int thumbWidth, int thumbHeight) throws Exception {
@@ -37,14 +35,8 @@ public class Thumbnail {
 		graphics2D.drawImage(image, 0, 0, thumbWidth, thumbHeight, null);
 		// save thumbnail a byte array
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
-		JPEGEncodeParam param = encoder.getDefaultJPEGEncodeParam(thumbImage);
-		int quality = 100;
-		quality = Math.max(0, Math.min(quality, 100));
-		param.setQuality((float)quality / 100.0f, false);
-		encoder.setJPEGEncodeParam(param);
-		encoder.encode(thumbImage);
-		out.close(); 
+		ImageIO.write( thumbImage, "image/jpg", out );
+		out.close();
 		return out.toByteArray();
 	}
 }

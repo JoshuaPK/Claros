@@ -43,7 +43,6 @@
             <version>2.6</version>
             <configuration>
                 <warSourceDirectory>WebContent</warSourceDirectory>
-                <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
             </configuration>
         </plugin>
     </plugins>
@@ -64,13 +63,53 @@
             <groupId>jivesoftware</groupId>
             <artifactId>smack</artifactId>
         </dependency>
-        <!--dependency>
+        <dependency>
             <groupId>jivesoftware</groupId>
             <artifactId>smackx</artifactId>
-        </dependency-->
+        </dependency>
+        <dependency>
+            <groupId>org.mnode.ical4j</groupId>
+            <artifactId>ical4j</artifactId>
+        </dependency>
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jasen</groupId>
+            <artifactId>jasen</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fastutil</groupId>
+            <artifactId>fastutil</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>rsslib4j</groupId>
+            <artifactId>rsslib4j</artifactId>
         </dependency>
     </dependencies>
 
