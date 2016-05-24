@@ -222,6 +222,16 @@ Claros inTouch featured an instant messenger (supporting Jabber, MSN, Gtalk, and
                 <artifactId>rsslib4j</artifactId>
                 <version>1.0</version>
             </dependency>
+            <dependency>
+                <groupId>taglibs-i18n</groupId>
+                <artifactId>taglibs-i18n</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>dsn</groupId>
+                <artifactId>dsn</artifactId>
+                <version>1.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 	    
