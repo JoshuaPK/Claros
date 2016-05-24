@@ -36,10 +36,10 @@ import org.claros.commons.mail.models.ConnectionProfile;
 import org.claros.commons.mail.models.EmailHeader;
 import org.claros.commons.mail.utility.Constants;
 import org.claros.commons.mail.utility.Utility;
-import org.claros.commons.utility.Formatter;
 
 import com.sun.mail.iap.ProtocolException;
 import com.sun.mail.imap.IMAPFolder;
+import org.claros.commons.utility.Formatter;
 
 /**
  * @author Umut Gokbayrak
@@ -302,7 +302,6 @@ public class ImapProtocolImpl implements Protocol {
 	/**
 	 * Fetches all e-mail headers from the server, with appropriate
 	 * fields already set.
-	 * @param handler
 	 * @return ArrayList of MessageHeaders
 	 * @throws ConnectionException
 	 */
@@ -387,7 +386,6 @@ public class ImapProtocolImpl implements Protocol {
 	/**
 	 * Disconnects the previously opened data connection if
 	 * the connection is still alive.
-	 * @param handler
 	 */
 	public void disconnect() {
 		try {

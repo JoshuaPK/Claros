@@ -147,7 +147,6 @@ public class Pop3ProtocolImpl implements Protocol {
 	/**
 	 * Fetches all e-mail headers from the server, with appropriate
 	 * fields already set.
-	 * @param handler
 	 * @return ArrayList of MessageHeaders
 	 * @throws ConnectionException
 	 */

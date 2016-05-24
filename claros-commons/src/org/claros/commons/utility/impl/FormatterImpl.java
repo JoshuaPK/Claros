@@ -7,12 +7,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.claros.commons.utility.CommonUtility;
-import org.claros.commons.utility.Formatter;
+import org.claros.commons.utility.Formatter2;
 
 /**
  * @author Umut Gokbayrak
  */
-public class FormatterImpl implements Formatter {
+public class FormatterImpl implements Formatter2 {
 	private static CommonUtility commonUtility = new CommonUtilityImpl();
 
 	private FormatterImpl() {
