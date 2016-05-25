@@ -157,13 +157,13 @@
 		</server>
 		-->
 		<server>
-			<shortname>localhost</shortname>
-			<fetch-server>localhost</fetch-server>
-			<fetch-server-port>143</fetch-server-port>
+			<shortname>avicit-test.com</shortname>
+			<fetch-server>mail.avicit-test.com</fetch-server>
+			<fetch-server-port>60143</fetch-server-port>
 			<fetch-protocol>imap</fetch-protocol>
 			<fetch-ssl>false</fetch-ssl>
-			<smtp-server>localhost</smtp-server>
-			<smtp-server-port>25</smtp-server-port>
+			<smtp-server>mail.avicit-test.com</smtp-server>
+			<smtp-server-port>6025</smtp-server-port>
 			<smtp-authenticated>true</smtp-authenticated>
 			<smtp-ssl>false</smtp-ssl>
 			<folder-namespace></folder-namespace>
