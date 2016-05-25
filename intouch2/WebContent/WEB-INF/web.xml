@@ -373,17 +373,6 @@
     <servlet-class>org.claros.intouch.webdisk.services.UploadFileService</servlet-class>
   </servlet>
 
-
-
-
-
-
-
-
-
-
-
-
   <servlet-mapping>
     <servlet-name>LoginService</servlet-name>
     <url-pattern>/profiling/login.cl</url-pattern>
@@ -705,11 +694,19 @@
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>defau;lt.jsp</welcome-file>
   </welcome-file-list>
 
-  <taglib>
+  <!--taglib>
     <taglib-uri>http://jakarta.apache.org/taglibs/i18n-1.0</taglib-uri>
     <taglib-location>/WEB-INF/tld/i18n.tld</taglib-location>
-  </taglib>
+  </taglib-->
+  
+  <jsp-config>
+     <taglib>
+       <taglib-uri>http://jakarta.apache.org/taglibs/i18n-1.0</taglib-uri>
+       <taglib-location>/WEB-INF/tld/i18n.tld</taglib-location>
+     </taglib>
+  </jsp-config>
+  
 </web-app>

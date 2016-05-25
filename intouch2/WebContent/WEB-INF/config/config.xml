@@ -256,7 +256,7 @@
 			<database>jdbc:postgresql:intouch</database>
 			<driver>org.postgresql.Driver</driver>
 			<login>postgres</login>
-			<password>CHANGE THIS</password>
+			<password>post1111</password>
 		</db>
 	</db-config>
 </claros-config>
